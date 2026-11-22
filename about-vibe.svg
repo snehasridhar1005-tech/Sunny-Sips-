@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="600" height="450">
+  <defs>
+    <linearGradient id="vibe-sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFF4DF"/>
+      <stop offset="60%" stop-color="#FFE0B2"/>
+      <stop offset="100%" stop-color="#FFCC80"/>
+    </linearGradient>
+    <filter id="soft-shdw" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#13301B" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <rect width="600" height="450" rx="28" fill="url(#vibe-sky)"/>
+
+  <!-- Sun in sky -->
+  <g transform="translate(110, 90)">
+    <circle cx="0" cy="0" r="32" fill="#FFC629"/>
+    <!-- Sun rays -->
+    <path d="M 0 -48 L 0 -40 M 0 40 L 0 48 M -48 0 L -40 0 M 40 0 L 48 0 M -34 -34 L -28 -28 M 28 28 L 34 34 M -34 34 L -28 28 M 28 -28 L 34 -34" stroke="#FF941F" stroke-width="4.5" stroke-linecap="round"/>
+    <path d="M -10 6 Q 0 16 10 6" stroke="#13301B" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <circle cx="-9" cy="-4" r="2.5" fill="#13301B"/>
+    <circle cx="9" cy="-4" r="2.5" fill="#13301B"/>
+  </g>
+
+  <!-- Takeaway Kiosk Counter / Stand -->
+  <g transform="translate(120, 160)" filter="url(#soft-shdw)">
+    <!-- Awning -->
+    <path d="M 10 20 L 350 20 L 370 75 L -10 75 Z" fill="#FF941F"/>
+    <!-- Awning Stripes -->
+    <path d="M 50 20 L 95 20 L 85 75 L 40 75 Z" fill="#FFC629"/>
+    <path d="M 140 20 L 185 20 L 175 75 L 130 75 Z" fill="#FFC629"/>
+    <path d="M 230 20 L 275 20 L 265 75 L 220 75 Z" fill="#FFC629"/>
+    <path d="M 320 20 L 350 20 L 355 75 L 310 75 Z" fill="#FFC629"/>
+
+    <!-- Awning scallops -->
+    <path d="M -10 75 Q 12 92 35 75 Q 57 92 80 75 Q 102 92 125 75 Q 147 92 170 75 Q 192 92 215 75 Q 237 92 260 75 Q 282 92 305 75 Q 327 92 350 75 Q 360 83 370 75" fill="#FF941F"/>
+
+    <!-- Signboard -->
+    <rect x="50" y="85" width="260" height="42" rx="12" fill="#13301B"/>
+    <text x="180" y="112" font-family="'Fredoka', sans-serif" font-weight="700" font-size="18" fill="#FFC629" text-anchor="middle">
+      SUNNY SIPS TAKEAWAY
+    </text>
+
+    <!-- Counter window structure -->
+    <rect x="30" y="130" width="300" height="150" rx="8" fill="#FFF4DF" stroke="#347B43" stroke-width="4"/>
+    <rect x="50" y="145" width="260" height="100" rx="6" fill="#FFE7BA"/>
+
+    <!-- Counter ledge -->
+    <rect x="15" y="240" width="330" height="18" rx="6" fill="#347B43"/>
+
+    <!-- Drinks lined up on counter -->
+    <!-- Drink 1 Mango Cooler -->
+    <rect x="95" y="200" width="24" height="40" rx="5" fill="#FFA726"/>
+    <line x1="107" y1="185" x2="107" y2="200" stroke="#FF7770" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="107" cy="220" r="4" fill="#FFF"/>
+
+    <!-- Drink 2 Mint Lemonade -->
+    <rect x="135" y="195" width="26" height="45" rx="5" fill="#FFEE58"/>
+    <line x1="148" y1="180" x2="148" y2="195" stroke="#347B43" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="148" cy="217" r="4" fill="#347B43"/>
+
+    <!-- Drink 3 Berry Iced Tea -->
+    <rect x="175" y="190" width="26" height="50" rx="5" fill="#FF7770"/>
+    <line x1="188" y1="175" x2="188" y2="190" stroke="#3265AE" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="188" cy="215" r="4" fill="#FFF"/>
+
+    <!-- Drink 4 Green Blend -->
+    <rect x="215" y="198" width="24" height="42" rx="5" fill="#81C784"/>
+    <line x1="227" y1="183" x2="227" y2="198" stroke="#FF941F" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Takeaway base wall -->
+    <rect x="30" y="258" width="300" height="22" fill="#E0A96D"/>
+  </g>
+
+  <!-- Potted orange plant on side -->
+  <g transform="translate(60, 320)">
+    <polygon points="15,40 35,40 42,75 8,75" fill="#FF7770"/>
+    <circle cx="25" cy="25" r="22" fill="#347B43"/>
+    <circle cx="16" cy="18" r="5" fill="#FF941F"/>
+    <circle cx="32" cy="30" r="5" fill="#FF941F"/>
+  </g>
+
+  <!-- Speech bubble / Brand quote badge -->
+  <g transform="translate(450, 110)">
+    <path d="M 0 0 L 110 0 C 120 0 128 8 128 18 L 128 58 C 128 68 120 76 110 76 L 30 76 L 10 95 L 14 76 L 0 76 C -10 76 -18 68 -18 58 L -18 18 C -18 8 -10 0 0 0 Z" fill="#FFFFFF" filter="url(#soft-shdw)"/>
+    <text x="50" y="30" font-family="'Fredoka', sans-serif" font-weight="700" font-size="12" fill="#13301B" text-anchor="middle">
+      GOOD MOOD.
+    </text>
+    <text x="50" y="48" font-family="'Fredoka', sans-serif" font-weight="700" font-size="12" fill="#FF941F" text-anchor="middle">
+      GREAT DRINK.
+    </text>
+    <path d="M 30 60 Q 50 67 70 60" stroke="#347B43" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- Ground shadow -->
+  <ellipse cx="300" cy="430" rx="270" ry="12" fill="#13301B" opacity="0.1"/>
+</svg>

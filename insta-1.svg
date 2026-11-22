@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <rect width="400" height="400" fill="#FFF4DF"/>
+  <circle cx="200" cy="200" r="160" fill="#FFE0B2"/>
+  <!-- Two cups toasting -->
+  <g transform="translate(140, 160) rotate(-15)">
+    <rect x="-25" y="-50" width="50" height="100" rx="10" fill="#FFA726"/>
+    <ellipse cx="0" cy="-50" rx="25" ry="8" fill="#FFF"/>
+    <line x1="0" y1="-75" x2="0" y2="-50" stroke="#347B43" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(260, 160) rotate(15)">
+    <rect x="-25" y="-50" width="50" height="100" rx="10" fill="#FF7770"/>
+    <ellipse cx="0" cy="-50" rx="25" ry="8" fill="#FFF"/>
+    <line x1="0" y1="-75" x2="0" y2="-50" stroke="#FFC629" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  <!-- Toast sparkles -->
+  <polygon points="200,100 205,115 220,120 205,125 200,140 195,125 180,120 195,115" fill="#FFC629"/>
+  <!-- Bottom Instagram tag overlay -->
+  <rect x="20" y="320" width="360" height="60" rx="16" fill="#13301B" opacity="0.9"/>
+  <text x="40" y="356" font-family="'Fredoka', sans-serif" font-weight="600" font-size="16" fill="#FFF4DF">@sunnysips • Drink breaks with the crew</text>
+</svg>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact &amp; Outlet | Sunny Sips — HSR Layout, Bengaluru</title>
+  <meta name="description" content="Visit Sunny Sips takeaway counter on 27th Main Road, Sector 2, HSR Layout, Bengaluru. Open 10:00 AM - 10:00 PM every day. Get in touch for campus events and bulk orders!">
+  
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- STICKY HEADER -->
+  <header class="site-header" role="banner">
+    <div class="container header-container">
+      <a href="index.html" class="site-logo" aria-label="Sunny Sips Home">
+        <img src="assets/images/logo.svg" alt="Sunny Sips - On The Bright Side" width="240" height="62">
+      </a>
+
+      <nav class="main-nav" role="navigation" aria-label="Main menu">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
+          <li><a href="index.html#campaign" class="nav-game-badge">☀️ Slice &amp; Win!</a></li>
+        </ul>
+
+        <div class="mobile-nav-cta" style="display: none;">
+          <a href="https://wa.me/910000000000?text=Hi%20Sunny%20Sips!%20I%20would%20like%20to%20order" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Order Now</a>
+        </div>
+      </nav>
+
+      <div class="header-actions">
+        <a href="https://wa.me/910000000000?text=Hi%20Sunny%20Sips!%20I%20would%20like%20to%20order" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Order Now</a>
+        <button type="button" class="mobile-menu-btn" aria-expanded="false" aria-label="Open navigation menu">
+          <span class="hamburger-icon" aria-hidden="true">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="main-content" id="main-content">
+
+    <!-- CONTACT HERO -->
+    <section class="section section-cream" style="padding-bottom: 2rem;">
+      <div class="container">
+        <div class="section-header" style="margin-bottom: 2rem;">
+          <span class="section-eyebrow">Get In Touch</span>
+          <h1 class="section-title creative-title">Say hello to Sunny Sips.</h1>
+          <p class="section-subtitle">
+            Whether you’re planning a campus fest, placing a bulk drink order, or craving a takeaway break in HSR Layout, we’re all ears!
+          </p>
+          <div class="motif-divider" aria-hidden="true">
+            <img src="assets/images/motif-divider.svg" alt="" width="160" height="32">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT GRID: ENQUIRY FORM + OUTLET DETAILS & GOOGLE MAPS -->
+    <section class="section section-white" style="padding-top: 1rem;">
+      <div class="container">
+        <div class="contact-layout-grid">
+          
+          <!-- LEFT: ENQUIRY FORM -->
+          <div class="contact-card-box">
+            <h2 style="font-size: 1.85rem; margin-bottom: 0.5rem;" class="creative-title">Send us a message</h2>
+            <p style="margin-bottom: 2rem; font-size: 0.95rem;">
+              Fill out the form below and our team will get back to you with sunny cheer!
+            </p>
+
+            <div id="formAlert" aria-live="polite"></div>
+
+            <form id="enquiryForm" novalidate>
+              
+              <div class="form-group">
+                <label for="name" class="form-label">Your Name <span style="color: var(--color-coral);" aria-hidden="true">*</span></label>
+                <input type="text" id="name" name="name" class="form-control" placeholder="e.g. Ananya Sharma" required aria-required="true">
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label">Email Address <span style="color: var(--color-coral);" aria-hidden="true">*</span></label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="e.g. ananya@college.edu" required aria-required="true">
+              </div>
+
+              <div class="form-group">
+                <label for="phone" class="form-label">Phone Number <span style="font-weight: 400; color: #7A8F7F;">(Optional)</span></label>
+                <input type="tel" id="phone" name="phone" class="form-control" placeholder="e.g. +91 98765 43210">
+              </div>
+
+              <div class="form-group">
+                <label for="topic" class="form-label">What’s this about? <span style="color: var(--color-coral);" aria-hidden="true">*</span></label>
+                <select id="topic" name="topic" class="form-control" required aria-required="true">
+                  <option value="" disabled selected>Select a topic...</option>
+                  <option value="general">General enquiry</option>
+                  <option value="events">College events and collaborations</option>
+                  <option value="bulk">Bulk or party orders</option>
+                  <option value="feedback">Feedback</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="form-label">Your Message <span style="color: var(--color-coral);" aria-hidden="true">*</span></label>
+                <textarea id="message" name="message" class="form-control" placeholder="Tell us how we can brighten your day..." required aria-required="true"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                Send Enquiry ☀️
+              </button>
+
+            </form>
+          </div>
+
+          <!-- RIGHT: OUTLET DETAILS & GOOGLE MAPS BLOCK -->
+          <div class="contact-card-box" id="visit">
+            <span class="section-eyebrow">Visit In Person</span>
+            <h2 style="font-size: 1.85rem; margin: 0.5rem 0 1rem;" class="creative-title">HSR Layout Outlet</h2>
+            <p style="font-size: 0.95rem;">
+              Drop by our takeaway counter for quick service. Grab your fresh fruit coolers, lemonades, iced teas, and blends on the go!
+            </p>
+
+            <ul class="outlet-info-list">
+              
+              <li class="outlet-info-item">
+                <div class="outlet-info-icon" aria-hidden="true">📍</div>
+                <div>
+                  <h3 class="outlet-info-title">Outlet Address</h3>
+                  <p class="outlet-info-value">
+                    27th Main Road, Sector 2, HSR Layout, Bengaluru, Karnataka – 560102.
+                  </p>
+                </div>
+              </li>
+
+              <li class="outlet-info-item">
+                <div class="outlet-info-icon" aria-hidden="true">⏰</div>
+                <div>
+                  <h3 class="outlet-info-title">Opening Hours</h3>
+                  <p class="outlet-info-value">
+                    10:00 AM – 10:00 PM<br>
+                    <strong>Monday – Sunday (All 7 days)</strong>
+                  </p>
+                </div>
+              </li>
+
+              <li class="outlet-info-item">
+                <div class="outlet-info-icon" aria-hidden="true">📞</div>
+                <div>
+                  <h3 class="outlet-info-title">Phone / Contact Details</h3>
+                  <p class="outlet-info-value">+91 00000 00000</p>
+                </div>
+              </li>
+
+              <li class="outlet-info-item">
+                <div class="outlet-info-icon" aria-hidden="true">✉️</div>
+                <div>
+                  <h3 class="outlet-info-title">Official Email</h3>
+                  <p class="outlet-info-value">
+                    <a href="mailto:hello@sunnysips.in" style="color: var(--color-tangerine); font-weight: 600;">hello@sunnysips.in</a>
+                  </p>
+                </div>
+              </li>
+
+            </ul>
+
+            <div style="margin-top: 1rem;">
+              <a href="https://wa.me/910000000000?text=Hi%20Sunny%20Sips!%20I%20would%20like%20to%20order" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width: 100%;">
+                Order Now (WhatsApp) 📱
+              </a>
+            </div>
+
+            <!-- Live Google Maps Embed for HSR Layout -->
+            <div style="margin-top: 1.75rem;">
+              <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--color-text-main);">
+                🗺️ Location on Google Maps:
+              </h3>
+              <div class="map-responsive-container">
+                <iframe 
+                  src="https://maps.google.com/maps?q=27th+Main+Road,+Sector+2,+HSR+Layout,+Bengaluru,+Karnataka+560102&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                  allowfullscreen="" 
+                  loading="lazy" 
+                  referrerpolicy="no-referrer-when-downgrade"
+                  title="Sunny Sips Outlet Location in Sector 2, HSR Layout, Bengaluru">
+                </iframe>
+              </div>
+              <div style="text-align: center; margin-top: 0.75rem;">
+                <a href="https://www.google.com/maps/search/?api=1&query=27th+Main+Road,+Sector+2,+HSR+Layout,+Bengaluru,+Karnataka+560102" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="font-size: 0.9rem; padding: 0.5rem 1.25rem;">
+                  Open in Google Maps App &rarr;
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- NEWSLETTER SIGNUP -->
+        <div style="background-color: var(--color-warm-cream); border: 2px dashed var(--color-tangerine); border-radius: var(--radius-xl); padding: 2.25rem; margin-top: 3rem; text-align: center;">
+          <span class="section-eyebrow">Sunshine Perks</span>
+          <h2 style="font-size: 2rem; margin: 0.5rem 0;" class="creative-title">Join the Sunshine Club</h2>
+          <p style="max-width: 520px; margin: 0 auto; font-size: 1rem; color: var(--color-text-muted);">
+            Be the first to hear about seasonal fruit drops, campus pop-ups, and weekly game leaderboard winners!
+          </p>
+
+          <form class="newsletter-form" style="display: flex; gap: 0.75rem; max-width: 520px; margin: 1.5rem auto 0;" novalidate>
+            <input type="email" class="form-control" placeholder="Enter your email address..." required aria-label="Email address for Sunshine Club" style="border-radius: var(--radius-pill);">
+            <button type="submit" class="btn btn-primary" style="white-space: nowrap;">
+              Join Club ☀️
+            </button>
+          </form>
+          <div class="newsletter-feedback" aria-live="polite"></div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CLOSING CTA -->
+    <section class="closing-cta" aria-labelledby="contact-cta-title">
+      <div class="container">
+        <h2 id="contact-cta-title" class="creative-title">Today's forecast: 100% refreshing.</h2>
+        <p>Take a sip. Take a break. We can’t wait to serve you your little dose of sunshine in HSR Layout!</p>
+        <a href="menu.html" class="btn btn-yellow">Browse our drink ranges &rarr;</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand">
+          <a href="index.html" aria-label="Sunny Sips Home">
+            <img src="assets/images/logo.svg" alt="Sunny Sips Logo" width="220" height="58">
+          </a>
+          <p>Exciting fruit flavours, vibrant takeaway presentation, and pocket-friendly refreshment in HSR Layout, Bengaluru.</p>
+          <div class="footer-social-links" style="display: flex; gap: 0.85rem; margin-top: 1rem; align-items: center; flex-wrap: wrap;">
+            <a href="https://www.instagram.com/sunn_ysips?cnvx=amljZXV2Nnp0anFl" target="_blank" rel="noopener noreferrer" style="color: var(--color-sunshine-yellow); font-size: 0.9rem; font-weight: 600; text-decoration: underline;" aria-label="Sunny Sips Instagram">Instagram (@sunn_ysips)</a>
+            <span style="color: rgba(255, 244, 223, 0.4);" aria-hidden="true">•</span>
+            <a href="https://www.facebook.com/share/19qTxBv3h9/" target="_blank" rel="noopener noreferrer" style="color: var(--color-sunshine-yellow); font-size: 0.9rem; font-weight: 600; text-decoration: underline;" aria-label="Sunny Sips Facebook">Facebook</a>
+          </div>
+        </div>
+
+        <div class="footer-nav">
+          <h3 class="footer-nav-title">Quick Links</h3>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="menu.html">Drink Menu</a></li>
+            <li><a href="contact.html">Contact &amp; Outlet</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-outlet-info">
+          <h3 class="footer-nav-title">HSR Layout Takeaway</h3>
+          <p><strong>Address:</strong> 27th Main Road, Sector 2, HSR Layout, Bengaluru, Karnataka – 560102.</p>
+          <p><strong>Hours:</strong> 10:00 AM – 10:00 PM (Monday – Sunday, All 7 days)</p>
+          <p><strong>Phone:</strong> +91 00000 00000</p>
+          <p><strong>Email:</strong> hello@sunnysips.in</p>
+          <p><a href="https://wa.me/910000000000?text=Hi%20Sunny%20Sips!%20I%20would%20like%20to%20order" target="_blank" rel="noopener noreferrer" class="btn btn-yellow" style="margin-top: 0.5rem; font-size: 0.95rem; padding: 0.5rem 1.25rem;">Order Now &rarr;</a></p>
+        </div>
+      </div>
+
+      <div class="footer-bottom-strip">
+        <p>&copy; 2026 Sunny Sips / On The Bright Side. Founded by Vaishnavi Somasundaram &amp; Sneha Sridhar (CHRIST University).</p>
+        <p class="footer-brand-voice">Make your break a fruit break!</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

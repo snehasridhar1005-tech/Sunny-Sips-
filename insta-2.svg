@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <rect width="400" height="400" fill="#FFF9C4"/>
+  <!-- Lemon slices flatlay -->
+  <g transform="translate(110, 110)">
+    <circle cx="0" cy="0" r="60" fill="#FDD835"/>
+    <circle cx="0" cy="0" r="48" fill="#FFF59D"/>
+    <path d="M 0 0 L 0 -45 M 0 0 L 39 -22 M 0 0 L 39 22 M 0 0 L 0 45 M 0 0 L -39 22 M 0 0 L -39 -22" stroke="#FFF" stroke-width="4"/>
+  </g>
+  <g transform="translate(290, 290)">
+    <circle cx="0" cy="0" r="70" fill="#FFA726"/>
+    <circle cx="0" cy="0" r="56" fill="#FFE082"/>
+    <path d="M 0 0 L 0 -52 M 0 0 L 45 -26 M 0 0 L 45 26 M 0 0 L 0 52 M 0 0 L -45 26 M 0 0 L -45 -26" stroke="#FFF" stroke-width="4"/>
+  </g>
+  <!-- Center Lemonade Cup -->
+  <g transform="translate(200, 200)">
+    <circle cx="0" cy="0" r="55" fill="#FFEE58" stroke="#347B43" stroke-width="6"/>
+    <text x="0" y="8" font-family="'Fredoka', sans-serif" font-weight="700" font-size="14" fill="#13301B" text-anchor="middle">LEMON DAYS</text>
+  </g>
+  <!-- Bottom Instagram tag overlay -->
+  <rect x="20" y="320" width="360" height="60" rx="16" fill="#13301B" opacity="0.9"/>
+  <text x="40" y="356" font-family="'Fredoka', sans-serif" font-weight="600" font-size="16" fill="#FFF4DF">#YourHashtag • 100% sunshine in a cup</text>
+</svg>

@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu &amp; Drink Sizes | Sunny Sips — HSR Layout, Bengaluru</title>
+  <meta name="description" content="Explore Sunny Sips' drink menu: 18 fresh drinks across 4 categories in 250ml Regular, 350ml Medium, and 500ml Large sizes. Affordable student pricing in HSR Layout!">
+  
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- STICKY HEADER -->
+  <header class="site-header" role="banner">
+    <div class="container header-container">
+      <a href="index.html" class="site-logo" aria-label="Sunny Sips Home">
+        <img src="assets/images/logo.svg" alt="Sunny Sips - On The Bright Side" width="240" height="62">
+      </a>
+
+      <nav class="main-nav" role="navigation" aria-label="Main menu">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="menu.html" class="active" aria-current="page">Menu</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="index.html#campaign" class="nav-game-badge open-game-btn">☀️ Slice &amp; Win!</a></li>
+        </ul>
+
+        <div class="mobile-nav-cta" style="display: none;">
+          <a href="https://wa.me/910000000000?text=Hi%20Sunny%20Sips!%20I%20would%20like%20to%20order" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Order Now</a>
+        </div>
+      </nav>
+
+      <div class="header-actions">
+        <a href="https://wa.me/910000000000?text=Hi%20Sunny%20Sips!%20I%20would%20like%20to%20order" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Order Now</a>
+        <button type="button" class="mobile-menu-btn" aria-expanded="false" aria-label="Open navigation menu">
+          <span class="hamburger-icon" aria-hidden="true">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="main-content" id="main-content">
+
+    <!-- MENU HERO -->
+    <section class="section section-cream" style="padding-bottom: 1.5rem;" aria-labelledby="menu-main-title">
+      <div class="container">
+        
+        <div class="section-header" style="margin-bottom: 2rem;">
+          <span class="section-eyebrow">The Drink Menu</span>
+          <h1 id="menu-main-title" class="section-title creative-title">Four ways to brighten your day.</h1>
+          <p class="section-subtitle">
+            Freshly prepared with real fruit flavours at our HSR Layout takeaway counter. Affordable, vibrant, and fun!
+          </p>
+          <div class="motif-divider" aria-hidden="true">
+            <img src="assets/images/motif-divider.svg" alt="" width="160" height="32">
+          </div>
+        </div>
+
+        <!-- Takeaway Note Banner -->
+        <div style="background-color: var(--color-sunshine-yellow); padding: 1.25rem 2rem; border-radius: var(--radius-pill); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-bottom: 2.5rem; box-shadow: var(--shadow-sm);">
+          <div style="font-family: var(--font-subheading); font-size: 1.25rem; font-weight: 700; color: var(--color-text-main); display: flex; align-items: center; gap: 0.6rem;">
+            <span aria-hidden="true">🥤</span>
+            <span>Takeaway Note: &ldquo;Grab it. Sip it. Go.&rdquo;</span>
+          </div>
+          <div>
+            <a href="https://wa.me/910000000000?text=Hi%20Sunny%20Sips!%20I%20would%20like%20to%20order" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+              Order Now (WhatsApp) &rarr;
+            </a>
+          </div>
+        </div>
+
+        <!-- 3 STANDARD SIZES SWITCHER -->
+        <div style="text-align: center;">
+          <h2 style="font-size: 1.45rem; margin-bottom: 0.5rem;" class="creative-title">
+            Select Your Cup Size &amp; Pricing 🥤
+          </h2>
+          <p style="font-size: 0.95rem; color: var(--color-text-muted); margin-bottom: 1rem;">
+            Click below to toggle pricing across all four categories or click any drink to inspect the cup:
+          </p>
+
+          <div class="size-selector-bar" role="tablist" aria-label="Drink sizes">
+            
+            <button type="button" class="size-pill-btn" data-size="250ml" role="tab" aria-selected="false">
+              <span class="size-pill-vol">250 ml</span>
+              <span class="size-pill-label">Regular • Small serving</span>
+            </button>
+
+            <button type="button" class="size-pill-btn is-active" data-size="350ml" role="tab" aria-selected="true">
+              <span class="size-pill-vol">350 ml</span>
+              <span class="size-pill-label">Medium • Popular choice ⭐</span>
+            </button>
+
+            <button type="button" class="size-pill-btn" data-size="500ml" role="tab" aria-selected="false">
+              <span class="size-pill-vol">500 ml</span>
+              <span class="size-pill-label">Large • Extra refreshment</span>
+            </button>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- DRINK CATEGORIES -->
+    <section class="section section-white" style="padding-top: 1rem;">
+      <div class="container">
+
+        <!-- 1. FRUIT COOLERS -->
+        <div class="menu-range-block cooler-block" id="coolers">
+          <div class="range-header">
+            <div class="range-header-info">
+              <span class="category-badge-tag badge-cooler">Range 01 • Tangerine Accent</span>
+              <h2 style="font-size: 2.2rem; margin: 0.5rem 0;" class="creative-title">Fruit Coolers</h2>
+              <p style="font-size: 1.1rem; color: var(--color-text-muted);">
+                Crisp, fruit-forward infusions shaken over ice to deliver instant cooling relief on a warm afternoon.
+              </p>
+            </div>
+            <div class="range-header-visual">
+              <img src="assets/images/cooler-card.svg" alt="Sunny Sips Fruit Coolers" width="140" height="105">
+            </div>
+          </div>
+
+          <div class="drink-items-grid">
+            
+            <div class="drink-item-card" title="Click to view realistic cup and sizes">
+              <div class="drink-item-top">
+                <h3 class="drink-item-name">Mango Magic</h3>
+                <span class="drink-item-price-tag">₹129</span>
+              </div>
+              <p class="drink-item-desc">Sweet tropical mango pulp shaken with chilled sparkling water and a hint of lime.</p>
+              <div class="card-size-row">
+                <span class="card-active-size">350 ml (Medium)</span>
+                <span class="view-drink-pill">Inspect Cup 🔍</span>
+              </div>
+            </div>
+
+            <div class="drink-item-card" title="Click to view realistic cup and sizes">
+              <div class="drink-item-top">
+                <h3 class="drink-item-name">Orange Bliss</h3>
+                <span class="drink-item-price-tag">₹129</span>
+              </div>
+              <p class="drink-item-desc">Sun-ripened orange juice infused with crushed mint and cooling citrus botanicals.</p>
+              <div class="card-size-row">
+                <span class="card-active-size">350 ml (Medium)</span>
+                <span class="view-drink-pill">Inspect Cup 🔍</span>
+              </div>
+            </div>
+
+            <div class="drink-item-card" title="Click to view realistic cup and sizes">
+              <div class="drink-item-top">
+                <h3 class="drink-item-name">Berry Buzz</h3>
+                <span class="drink-item-price-tag">₹139</span>
+              </div>
+              <p class="drink-item-desc">A lively blend of wild strawberries and cranberries with a sparkling fizzy finish.</p>
+              <div class="card-size-row">
+                <span class="card-active-size">350 ml (Medium)</span>
+                <span class="view-drink-pill">Inspect Cup 🔍</span>
+              </div>
+            </div>
+
+            <div class="drink-item-card" title="Click to view realistic cup and sizes">
+              <div class="drink-item-top">
+                <h3 class="drink-item-name">Minty Cool</h3>
+                <span class="drink-item-price-tag">₹119</span>
+              </div>
+              <p class="drink-item-desc">Crisp green apples muddled with fresh garden mint leaves and chilled spring water.</p>
+              <div class="card-size-row">
+                <span class="card-active-size">350 ml (Medium)</span>
+                <span class="view-drink-pill">Inspect Cup 🔍</span>
+              </div>
+            </div>
+
+            <div class="drink-item-card" title="Click to view realistic cup and sizes">
+              <div class="drink-item-top">
+                <h3 class="drink-item-name">Grape Groove</h3>
+                <span class="drink-item-price-tag">₹129</span>
+              </div>
+              <p class="drink-item-desc">Rich Bangalore blue grape infusion served ice-cold with sweet floral notes.</p>
+              <div class="card-size-row">
+                <span class="card-active-size">350 ml (Medium)</span>
+                <span class="view-drink-pill">Inspect Cup 🔍</span>
+              </div>
+            </div>
+
+            <div class="drink-item-card" title="Click to view realistic cup and sizes">
+              <div class="drink-item-top">
+                <h3 class="drink-item-name">Tropical Twist</h3>
+                <span class="drink-item-price-tag">₹139</span>
+              </div>
+              <p class="drink-item-desc">Pineapple, passion fruit, and citrus layers that bring vacation vibes to your break.</p>
+              <div class="card-size-row">
+                <span class="card-active-size">350 ml (Medium)</span>
+                <span class="view-drink-pill">Inspect Cup 🔍</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- 2. LEMONADES -->
+        <div class="menu-range-block lemonade-block" id="lemonades">
+          <div class="range-header">
+            <div class="range-header-info">
+              <span class="category-badge-tag badge-lemonade">Range 02 • Lemon Days</span>
+              <h2 style="font-size: 2.2rem; margin: 0.5rem 0;" class="creative-title">Lemonades ("Lemon Days")</h2>
+              <p style="font-size: 1.1rem; color: var(--color-text-muted);">
+                Zesty, hand-squeezed citrus bursts with just the right balance of sweet and tangy goodness.
+              </p>
+            </div>
+            <div class="range-header-visual">
+              <img src="assets/images/lemonade-card.svg" alt="Sunny Sips Lemon Days" width="140" height="105">
+            </div>
+          </div>
+
+          <div class="drink-items-grid">
+            
+            <div class="drink-item-card" title="Click to view realistic cup and sizes">
+              <div class="drink-item-top">
+                <h3 class="drink-item-name">Classic Sunshine Lemonade</h3>
+                <span class="drink-item-price-tag">₹99</span>
+              </div>
+              <p class="drink-item-desc">Traditional cold-pressed lemons sweetened with cane sugar and a pinch of rock salt.</p>
+              <div class="card-size-row">
+                <span class="card-active-size">350 ml (Medium)</span>
+                <span class="view-drink-pill">Inspect Cup 🔍</span>
+              </div>
+            </div>
+
+            <div class="drink-item-card" title="Click to view realistic cup and sizes">
+              <div class="drink-item-top">
+                <h3 class="drink-item-name">Mint Splash Lemonade</h3>
+                <span class="drink-item-price-tag">₹109</span>
+              </div>
+              <p class="drink-item-desc">Freshly crushed spearmint infused with zesty citrus and crushed ice crystals.</p>
+              <div class="card-size-row">
+                <span class="card-active-size">350 ml (Medium)</span>
+                <span class="view-drink-pill">Inspect Cup 🔍</span>
+              </div>
+            </div>
+
+            <div class="drink-item-card" title="Click to view realistic cup and sizes">
+              <div class="drink-item-top">
+                <h3 class="drink-item-name">Ginger Zing Lemonade</h3>
+                <span class="drink-item-price-tag">₹109</span>
+              </div>
+              <p class="drink-item-desc">A fiery punch of fresh ginger juice paired with crisp yellow lemon for a spicy-citrus kick.</p>
+              <div class="card-size-row">
+                <span class="card-active-size">350 ml (Medium)</span>
+                <span class="view-drink-pill">Inspect Cup 🔍</span>
+              </div>
+            </div>
+
+            <div class="drink-item-card" title="Click to view realistic cup and sizes">
+              <div class="drink-item-top">
+                <h3 class="drink-item-name">Pink Berry Lemonade</h3>
+                <span class="drink-item-price-tag">₹119</span>
+              </div>
+              <p class="drink-item-desc">Juicy raspberry puree swirled into sparkling lemonade for a vibrant pink aesthetic.</p>
+              <div class="card-size-row">
+                <span class="card-active-size">350 ml (Medium)</span>
+                <span class="view-drink-pill">Inspect Cup 🔍</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- 3. ICED TEAS -->
+        <div class="menu-range-block tea-block" id="teas">
+          <div class="range-header">
+            <div class="range-header-info">
+              <span class="category-badge-tag badge-tea">Range 03 • Tea Time</span>
+              <h2 style="font-size: 2.2rem; margin: 0.5rem 0;" class="creative-title">Iced Teas ("Tea Time")</h2>
+              <p style="font-size: 1.1rem; color: var(--color-text-muted);">
+                Lightly brewed Nilgiri tea leaves paired with natural fruit syrups, served chilled over crystalline ice.
+              </p>
+            </div>
+            <div class="range-header-visual">
+              <img src="assets/images/tea-card.svg" alt="Sunny Sips Tea Time iced teas" width="140" height="105">
+            </div>
+          </div>
+
+          <div class="drink-items-grid">
+            
+            <div class="drink-item-card" title="Click to view realistic cup and sizes">
+              <div class="drink-item-top">
+                <h3 class="drink-item-name">Peach Breeze Iced Tea</h3>
+                <span class="drink-item-price-tag">₹109</span>
+              </div>
+              <p class="drink-item-desc">Delicate black tea infused with sweet white peach nectar and aromatic lemon peel.</p>
+              <div class="card-size-row">
+                <span class="card-active-size">350 ml (Medium)</span>
+                <span class="view-drink-pill">Inspect Cup 🔍</span>
+              </div>
+            </div>
+
+            <div class="drink-item-card" title="Click to view realistic cup and sizes">
+              <div class="drink-item-top">
+                <h3 class="drink-item-name">Lemon Herbal Iced Tea</h3>
+                <span class="drink-item-price-tag">₹99</span>
+              </div>
+              <p class="drink-item-desc">Classic amber tea balanced with tangy citrus slices and a soothing herbal finish.</p>
+              <div class="card-size-row">
+                <span class="card-active-size">350 ml (Medium)</span>
+                <span class="view-drink-pill">Inspect Cup 🔍</span>
+              </div>
+            </div>
+
+            <div class="drink-item-card" title="Click to view realistic cup and sizes">
+              <div class="drink-item-top">
+                <h3 class="drink-item-name">Berry Hibiscus Iced Tea</h3>
+                <span class="drink-item-price-tag">₹119</span>
+              </div>
+              <p class="drink-item-desc">Ruby hibiscus herbal brew loaded with mixed red berries and subtle floral undertones.</p>
+              <div class="card-size-row">
+                <span class="card-active-size">350 ml (Medium)</span>
+                <span class="view-drink-pill">Inspect Cup 🔍</span>
+              </div>
+            </div>
+
+            <div class="drink-item-card" title="Click to view realistic cup and sizes">
+              <div class="drink-item-top">
+                <h3 class="drink-item-name">Mango Mint Green Tea</h3>
+                <span class="drink-item-price-tag">₹119</span>
+              </div>
+              <p class="drink-item-desc">Antioxidant-rich chilled green tea infused with ripe mango essence and crisp mint.</p>
+              <div class="card-size-row">
+                <span class="card-active-size">350 ml (Medium)</span>
+                <span class="view-drink-pill">Inspect Cup 🔍</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- 4. BLENDED FRUIT DRINKS -->
+        <div class="menu-range-block blend-block" id="blends">
+          <div class="range-header">
+            <div class="range-header-info">
+              <span class="category-badge-tag badge-blend">Range 04 • Happy Blends</span>
+              <h2 style="font-size: 2.2rem; margin: 0.5rem 0;" class="creative-title">Blended Fruit Drinks ("Happy Blends")</h2>
+              <p style="font-size: 1.1rem; color: var(--color-text-muted);">
+                Smooth, thick, and velvety whole-fruit blends designed to give you wholesome hydration and energy.
+              </p>
+            </div>
+            <div class="range-header-visual">
+              <img src="assets/images/blend-card.svg" alt="Sunny Sips Happy Blends" width="140" height="105">
+            </div>
+          </div>
+
+          <div class="drink-items-grid">
+            
+            <div class="drink-item-card" title="Click to view realistic cup and sizes">
+              <div class="drink-item-top">
+                <h3 class="drink-item-name">Tropical Sunshine Blend</h3>
+                <span class="drink-item-price-tag">₹149</span>
+              </div>
+              <p class="drink-item-desc">Mango, pineapple, and sweet banana blended with coconut water for creamy refreshment.</p>
+              <div class="card-size-row">
+                <span class="card-active-size">350 ml (Medium)</span>
+                <span class="view-drink-pill">Inspect Cup 🔍</span>
+              </div>
+            </div>
+
+            <div class="drink-item-card" title="Click to view realistic cup and sizes">
+              <div class="drink-item-top">
+                <h3 class="drink-item-name">Berry Burst Smoothie</h3>
+                <span class="drink-item-price-tag">₹159</span>
+              </div>
+              <p class="drink-item-desc">Real strawberries, blueberries, and bananas whip together for a thick antioxidant boost.</p>
+              <div class="card-size-row">
+                <span class="card-active-size">350 ml (Medium)</span>
+                <span class="view-drink-pill">Inspect Cup 🔍</span>
+              </div>
+            </div>
+
+            <div class="drink-item-card" title="Click to view realistic cup and sizes">
+              <div class="drink-item-top">
+                <h3 class="drink-item-name">Kiwi Green Chill</h3>
+                <span class="drink-item-price-tag">₹149</span>
+              </div>
+              <p class="drink-item-desc">Tart kiwi, green apples, and cucumber blended ice-cold with sweet lime and chia seeds.</p>
+              <div class="card-size-row">
+                <span class="card-active-size">350 ml (Medium)</span>
+                <span class="view-drink-pill">Inspect Cup 🔍</span>
+              </div>
+            </div>
+
+            <div class="drink-item-card" title="Click to view realistic cup and sizes">
+              <div class="drink-item-top">
+                <h3 class="drink-item-name">Watermelon Cooler Blend</h3>
+                <span class="drink-item-price-tag">₹139</span>
+              </div>
+              <p class="drink-item-desc">Crisp fresh watermelon blended with basil seeds and pink Himalayan rock salt.</p>
+              <div class="card-size-row">
+                <span class="card-active-size">350 ml (Medium)</span>
+                <span class="view-drink-pill">Inspect Cup 🔍</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CLOSING CALL TO ACTION -->
+    <section class="closing-cta" aria-labelledby="menu-cta-title">
+      <div class="container">
+        <h2 id="menu-cta-title" class="creative-title">Good mood. Great drink.</h2>
+        <p>Pick up your takeaway drink today at 27th Main HSR Layout or order on WhatsApp!</p>
+        <a href="https://wa.me/910000000000?text=Hi%20Sunny%20Sips!%20I%20would%20like%20to%20order" target="_blank" rel="noopener noreferrer" class="btn btn-yellow">
+          Order Now (WhatsApp) &rarr;
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- REALISTIC DRINK INSPECTOR MODAL WITH SIZE SCALER -->
+  <div class="drink-modal" id="drinkModal" role="dialog" aria-modal="true" aria-labelledby="modalDrinkName">
+    <div class="drink-inspector-card">
+      <button type="button" class="inspector-close-btn" aria-label="Close Drink Inspector">&times;</button>
+
+      <!-- Realistic Cup Visualizer Area -->
+      <div class="drink-inspector-visual">
+        <div class="realistic-cup-wrapper" data-size="350ml">
+          <svg class="cup-svg-graphic" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 280" width="180" height="252">
+            <!-- Dome Lid with Straw -->
+            <path d="M 92 10 L 108 120" stroke="#347B43" stroke-width="8" stroke-linecap="round"/>
+            <ellipse cx="100" cy="55" rx="55" ry="12" fill="#FFFFFF" opacity="0.45" stroke="#FFFFFF" stroke-width="2.5"/>
+            <path d="M 45 55 C 45 22 155 22 155 55 Z" fill="#FFFFFF" opacity="0.3" stroke="#FFFFFF" stroke-width="2.5"/>
+            
+            <!-- Clear Takeaway Cup Body -->
+            <path id="modalCupLiquid" d="M 52 65 L 148 65 L 134 250 C 133 258 126 264 118 264 L 82 264 C 74 264 67 258 66 250 Z" fill="#FF941F"/>
+            
+            <!-- Real fruit pieces floating inside -->
+            <circle cx="85" cy="110" r="14" fill="#FFC629" opacity="0.85"/>
+            <circle cx="85" cy="110" r="9" fill="#FF941F"/>
+            <!-- Mint leaf -->
+            <path d="M 120 95 C 130 85 138 98 125 105 Z" fill="#347B43"/>
+            <!-- Ice cube -->
+            <rect x="90" y="140" width="22" height="22" rx="4" fill="#FFFFFF" opacity="0.5" transform="rotate(20 90 140)"/>
+            <rect x="75" y="190" width="20" height="20" rx="4" fill="#FFFFFF" opacity="0.5" transform="rotate(-15 75 190)"/>
+
+            <!-- Cup exterior highlight sheen -->
+            <path d="M 48 60 L 152 60 L 138 255 C 137 262 128 268 118 268 L 82 268 C 72 268 63 262 62 255 Z" fill="none" stroke="#FFFFFF" stroke-width="4.5" opacity="0.8"/>
+            <!-- Brand Badge on Cup -->
+            <circle cx="100" cy="170" r="24" fill="#FFF4DF" stroke="#FF941F" stroke-width="2"/>
+            <text x="100" y="172" font-family="'Titan One', sans-serif" font-size="7.5" fill="#13301B" text-anchor="middle">SUNNY SIPS</text>
+            <path d="M 90 179 Q 100 184 110 179" stroke="#347B43" stroke-width="1.2" fill="none"/>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Drink Details & Size Picker -->
+      <div class="drink-inspector-info">
+        <div>
+          <span class="category-badge-tag" style="background-color: var(--color-warm-cream); color: var(--color-tangerine); font-weight: 700;">
+            Fresh Takeaway Beverage
+          </span>
+          <h2 id="modalDrinkName" style="font-size: 2rem; margin: 0.5rem 0;" class="creative-title">Mango Magic</h2>
+          <p id="modalDrinkDesc" style="color: var(--color-text-muted); font-size: 1rem; margin-bottom: 1.5rem;">
+            Sweet tropical mango pulp shaken with chilled sparkling water and a hint of lime.
+          </p>
+
+          <h3 style="font-size: 1.05rem; margin-bottom: 0.6rem;">Select Size to Scale Cup:</h3>
+          <div style="display: flex; gap: 0.6rem; flex-wrap: wrap; margin-bottom: 1.5rem;">
+            <button type="button" class="btn btn-secondary modal-size-btn" data-size="250ml" style="font-size: 0.9rem; padding: 0.5rem 1rem;">
+              250 ml (Regular)
+            </button>
+            <button type="button" class="btn btn-secondary modal-size-btn is-active" data-size="350ml" style="font-size: 0.9rem; padding: 0.5rem 1rem;">
+              350 ml (Medium) ⭐
+            </button>
+            <button type="button" class="btn btn-secondary modal-size-btn" data-size="500ml" style="font-size: 0.9rem; padding: 0.5rem 1rem;">
+              500 ml (Large)
+            </button>
+          </div>
+
+          <div style="background-color: var(--color-surface-soft); padding: 1rem 1.25rem; border-radius: var(--radius-md); display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+            <span style="font-size: 1rem; color: var(--color-text-main); font-weight: 600;">Price:</span>
+            <span id="modalDrinkPrice" style="font-size: 1.6rem; font-family: var(--font-heading); color: var(--color-fresh-green);">
+              ₹129 (350ml)
+            </span>
+          </div>
+        </div>
+
+        <div>
+          <a href="#" id="modalOrderBtn" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width: 100%;">
+            Order This Drink on WhatsApp 📱
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand">
+          <a href="index.html" aria-label="Sunny Sips Home">
+            <img src="assets/images/logo.svg" alt="Sunny Sips Logo" width="220" height="58">
+          </a>
+          <p>Exciting fruit flavours, vibrant takeaway presentation, and pocket-friendly refreshment in HSR Layout, Bengaluru.</p>
+          <div class="footer-social-links" style="display: flex; gap: 0.85rem; margin-top: 1rem; align-items: center; flex-wrap: wrap;">
+            <a href="https://www.instagram.com/sunn_ysips?cnvx=amljZXV2Nnp0anFl" target="_blank" rel="noopener noreferrer" style="color: var(--color-sunshine-yellow); font-size: 0.9rem; font-weight: 600; text-decoration: underline;" aria-label="Sunny Sips Instagram">Instagram (@sunn_ysips)</a>
+            <span style="color: rgba(255, 244, 223, 0.4);" aria-hidden="true">•</span>
+            <a href="https://www.facebook.com/share/19qTxBv3h9/" target="_blank" rel="noopener noreferrer" style="color: var(--color-sunshine-yellow); font-size: 0.9rem; font-weight: 600; text-decoration: underline;" aria-label="Sunny Sips Facebook">Facebook</a>
+          </div>
+        </div>
+
+        <div class="footer-nav">
+          <h3 class="footer-nav-title">Quick Links</h3>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="menu.html">Drink Menu</a></li>
+            <li><a href="contact.html">Contact &amp; Outlet</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-outlet-info">
+          <h3 class="footer-nav-title">HSR Layout Takeaway</h3>
+          <p><strong>Address:</strong> 27th Main Road, Sector 2, HSR Layout, Bengaluru, Karnataka – 560102.</p>
+          <p><strong>Hours:</strong> 10:00 AM – 10:00 PM (Monday – Sunday, All 7 days)</p>
+          <p><strong>Phone:</strong> +91 00000 00000</p>
+          <p><strong>Email:</strong> hello@sunnysips.in</p>
+          <p><a href="https://wa.me/910000000000?text=Hi%20Sunny%20Sips!%20I%20would%20like%20to%20order" target="_blank" rel="noopener noreferrer" class="btn btn-yellow" style="margin-top: 0.5rem; font-size: 0.95rem; padding: 0.5rem 1.25rem;">Order Now &rarr;</a></p>
+        </div>
+      </div>
+
+      <div class="footer-bottom-strip">
+        <p>&copy; 2026 Sunny Sips / On The Bright Side. Founded by Vaishnavi Somasundaram &amp; Sneha Sridhar (CHRIST University).</p>
+        <p class="footer-brand-voice">Make your break a fruit break!</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

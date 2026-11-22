@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF4DF"/>
+      <stop offset="100%" stop-color="#FFE7BA"/>
+    </linearGradient>
+    <linearGradient id="cup-liquid" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FF941F"/>
+      <stop offset="40%" stop-color="#FF7770"/>
+      <stop offset="100%" stop-color="#FFC629"/>
+    </linearGradient>
+    <linearGradient id="straw-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#347B43"/>
+      <stop offset="100%" stop-color="#55A866"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#FF941F" flood-opacity="0.28"/>
+    </filter>
+  </defs>
+
+  <!-- Background Card -->
+  <rect width="500" height="500" rx="40" fill="url(#bg-grad)"/>
+
+  <!-- Decorative sun rays & bursts in background -->
+  <g opacity="0.4" stroke="#FFC629" stroke-width="4" stroke-linecap="round">
+    <line x1="80" y1="120" x2="105" y2="135" />
+    <line x1="420" y1="140" x2="395" y2="155" />
+    <line x1="410" y1="340" x2="385" y2="330" />
+    <line x1="90" y1="360" x2="115" y2="345" />
+  </g>
+  <circle cx="410" cy="110" r="18" fill="#FFC629" opacity="0.6"/>
+  <circle cx="85" cy="400" r="12" fill="#FF7770" opacity="0.5"/>
+
+  <!-- Straw sticking out -->
+  <path d="M 235 60 L 290 280" stroke="url(#straw-grad)" stroke-width="16" stroke-linecap="round"/>
+  <!-- Straw stripes -->
+  <line x1="240" y1="80" x2="252" y2="83" stroke="#FFF4DF" stroke-width="4" stroke-linecap="round"/>
+  <line x1="248" y1="110" x2="260" y2="113" stroke="#FFF4DF" stroke-width="4" stroke-linecap="round"/>
+  <line x1="256" y1="140" x2="268" y2="143" stroke="#FFF4DF" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Clear Cup Body with Shadow -->
+  <g filter="url(#shadow)">
+    <!-- Liquid inside -->
+    <path d="M 182 170 L 318 170 L 298 395 C 297 410 285 420 270 420 L 230 420 C 215 420 203 410 202 395 Z" fill="url(#cup-liquid)"/>
+    
+    <!-- Liquid layers / fruit swirls -->
+    <path d="M 186 230 Q 250 250 314 230 L 306 320 Q 250 340 194 320 Z" fill="#FF7770" opacity="0.35"/>
+    
+    <!-- Clear cup exterior sheen -->
+    <path d="M 175 160 L 325 160 L 302 405 C 300 422 286 435 268 435 L 232 435 C 214 435 200 422 198 405 Z" 
+          fill="none" stroke="#FFFFFF" stroke-width="7" opacity="0.9"/>
+  </g>
+
+  <!-- Cup Rim & Dome Lid -->
+  <ellipse cx="250" cy="160" rx="77" ry="16" fill="#FFFFFF" opacity="0.4" stroke="#FFFFFF" stroke-width="4"/>
+  <path d="M 180 160 C 180 115 320 115 320 160 Z" fill="#FFFFFF" opacity="0.25" stroke="#FFFFFF" stroke-width="4"/>
+
+  <!-- Fruit slices floating inside & on rim -->
+  <!-- Orange wheel garnish on rim -->
+  <g transform="translate(180, 150) rotate(-25)">
+    <circle cx="0" cy="0" r="32" fill="#FF941F" stroke="#FFFFFF" stroke-width="4"/>
+    <circle cx="0" cy="0" r="26" fill="#FFC629"/>
+    <!-- Segments -->
+    <path d="M 0 0 L 0 -22 M 0 0 L 19 -11 M 0 0 L 19 11 M 0 0 L 0 22 M 0 0 L -19 11 M 0 0 L -19 -11" stroke="#FFFFFF" stroke-width="2.5"/>
+  </g>
+
+  <!-- Mint sprig garnish -->
+  <path d="M 195 125 C 190 100 215 105 215 115 C 215 125 200 130 195 125 Z" fill="#347B43"/>
+  <path d="M 205 130 C 220 115 235 125 228 135 C 220 145 205 138 205 130 Z" fill="#55A866"/>
+
+  <!-- Ice cubes inside cup -->
+  <rect x="220" y="210" width="34" height="34" rx="8" fill="#FFFFFF" opacity="0.45" transform="rotate(12 220 210)"/>
+  <rect x="255" y="270" width="30" height="30" rx="8" fill="#FFFFFF" opacity="0.45" transform="rotate(-15 255 270)"/>
+
+  <!-- Cup sticker badge (Sunny Sips brand logo mark) -->
+  <g transform="translate(250, 310)">
+    <circle cx="0" cy="0" r="42" fill="#FFF4DF" stroke="#FF941F" stroke-width="3"/>
+    <!-- Mini sun -->
+    <circle cx="0" cy="-14" r="9" fill="#FFC629"/>
+    <path d="M 0 -26 L 0 -23 M 0 -5 L 0 -2 M -12 -14 L -9 -14 M 9 -14 L 12 -14" stroke="#FF941F" stroke-width="2.5" stroke-linecap="round"/>
+    <text x="0" y="8" font-family="'Fredoka', sans-serif" font-weight="700" font-size="12" fill="#13301B" text-anchor="middle">SUNNY</text>
+    <text x="0" y="20" font-family="'Fredoka', sans-serif" font-weight="700" font-size="11" fill="#347B43" text-anchor="middle">SIPS</text>
+    <path d="M -16 26 Q 0 34 16 26" stroke="#FF941F" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- Floating Boba/Fruit pearls or droplets -->
+  <circle cx="215" cy="365" r="7" fill="#FF7770" opacity="0.8"/>
+  <circle cx="270" cy="380" r="8" fill="#FF941F" opacity="0.8"/>
+  <circle cx="240" cy="395" r="6" fill="#347B43" opacity="0.8"/>
+
+  <!-- Floating Sparkles -->
+  <g fill="#FFC629">
+    <path d="M 360 210 Q 360 220 370 220 Q 360 220 360 230 Q 360 220 350 220 Q 360 220 360 210 Z" />
+    <path d="M 130 270 Q 130 278 138 278 Q 130 278 130 286 Q 130 278 122 278 Q 130 278 130 270 Z" />
+  </g>
+
+  <!-- Tagline badge overlay -->
+  <g transform="translate(250, 465)">
+    <rect x="-140" y="-18" width="280" height="36" rx="18" fill="#13301B"/>
+    <text x="0" y="6" font-family="'Fredoka', sans-serif" font-weight="600" font-size="14" fill="#FFC629" text-anchor="middle" letter-spacing="0.5">
+      TAKEAWAY OUTLET • BENGALURU
+    </text>
+  </g>
+</svg>

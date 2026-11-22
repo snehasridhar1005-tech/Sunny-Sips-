@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <linearGradient id="lem-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF9C4"/>
+      <stop offset="100%" stop-color="#FFD54F"/>
+    </linearGradient>
+    <linearGradient id="lem-liq" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFF176"/>
+      <stop offset="50%" stop-color="#FFEE58"/>
+      <stop offset="100%" stop-color="#FFCA28"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" rx="24" fill="url(#lem-bg)"/>
+
+  <!-- Lemon Slices in Background -->
+  <g transform="translate(100, 110) rotate(-20)">
+    <circle cx="0" cy="0" r="42" fill="#FDD835" stroke="#FFFFFF" stroke-width="4"/>
+    <circle cx="0" cy="0" r="34" fill="#FFF59D"/>
+    <path d="M 0 0 L 0 -30 M 0 0 L 26 -15 M 0 0 L 26 15 M 0 0 L 0 30 M 0 0 L -26 15 M 0 0 L -26 -15" stroke="#FFFFFF" stroke-width="3"/>
+  </g>
+  <g transform="translate(305, 170) rotate(40)">
+    <circle cx="0" cy="0" r="32" fill="#FDD835" stroke="#FFFFFF" stroke-width="3"/>
+    <circle cx="0" cy="0" r="25" fill="#FFF59D"/>
+    <path d="M 0 0 L 0 -22 M 0 0 L 19 -11 M 0 0 L 19 11 M 0 0 L 0 22 M 0 0 L -19 11 M 0 0 L -19 -11" stroke="#FFFFFF" stroke-width="2.5"/>
+  </g>
+
+  <!-- Yellow & White Striped Straw -->
+  <path d="M 235 25 L 205 145" stroke="#FF941F" stroke-width="12" stroke-linecap="round"/>
+  <line x1="232" y1="40" x2="225" y2="43" stroke="#FFF" stroke-width="3.5" stroke-linecap="round"/>
+  <line x1="225" y1="65" x2="218" y2="68" stroke="#FFF" stroke-width="3.5" stroke-linecap="round"/>
+  <line x1="218" y1="90" x2="211" y2="93" stroke="#FFF" stroke-width="3.5" stroke-linecap="round"/>
+
+  <!-- Takeaway Cup -->
+  <path d="M 160 100 L 240 100 L 228 245 C 227 254 220 260 210 260 L 190 260 C 180 260 173 254 172 245 Z" fill="url(#lem-liq)"/>
+  <path d="M 155 95 L 245 95 L 231 250 C 230 260 221 268 210 268 L 190 268 C 179 268 170 260 169 250 Z" 
+        fill="none" stroke="#FFFFFF" stroke-width="5" opacity="0.85"/>
+  <ellipse cx="200" cy="95" rx="46" ry="10" fill="#FFFFFF" opacity="0.4"/>
+
+  <!-- Sparkling bubbles -->
+  <circle cx="185" cy="140" r="3" fill="#FFF" opacity="0.8"/>
+  <circle cx="215" cy="155" r="4.5" fill="#FFF" opacity="0.7"/>
+  <circle cx="190" cy="190" r="4" fill="#FFF" opacity="0.8"/>
+  <circle cx="210" cy="220" r="3.5" fill="#FFF" opacity="0.8"/>
+  <circle cx="180" cy="235" r="2.5" fill="#FFF" opacity="0.6"/>
+
+  <!-- Ice cubes -->
+  <rect x="180" y="160" width="22" height="22" rx="5" fill="#FFF" opacity="0.6" transform="rotate(15 180 160)"/>
+  <rect x="200" y="195" width="20" height="20" rx="5" fill="#FFF" opacity="0.6" transform="rotate(-10 200 195)"/>
+
+  <!-- Lemon wedge on rim -->
+  <path d="M 235 90 C 245 80 260 90 255 105 Z" fill="#FDD835" stroke="#FFF" stroke-width="2"/>
+  
+  <!-- Fresh Green Mint Leaves -->
+  <path d="M 240 75 C 245 60 260 68 255 78 Z" fill="#347B43"/>
+  <path d="M 248 78 C 260 70 268 82 258 86 Z" fill="#55A866"/>
+
+  <!-- Brand Smile on cup -->
+  <circle cx="200" cy="180" r="16" fill="#FFF4DF"/>
+  <circle cx="195" cy="177" r="1.5" fill="#13301B"/>
+  <circle cx="205" cy="177" r="1.5" fill="#13301B"/>
+  <path d="M 195 182 Q 200 187 205 182" stroke="#347B43" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+
+  <!-- Category Pill Badge -->
+  <g transform="translate(200, 280)">
+    <rect x="-85" y="-14" width="170" height="28" rx="14" fill="#13301B"/>
+    <text x="0" y="5" font-family="'Fredoka', sans-serif" font-weight="600" font-size="12" fill="#FFC629" text-anchor="middle">
+      LEMON DAYS (LEMONADES)
+    </text>
+  </g>
+</svg>

@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <linearGradient id="tea-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFEBEE"/>
+      <stop offset="100%" stop-color="#FFCDD2"/>
+    </linearGradient>
+    <linearGradient id="tea-liq" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FF7770"/>
+      <stop offset="40%" stop-color="#E65100"/>
+      <stop offset="100%" stop-color="#BF360C"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" rx="24" fill="url(#tea-bg)"/>
+
+  <!-- Peach & Tea leaf accents in background -->
+  <g transform="translate(100, 110)">
+    <!-- Peach shape -->
+    <path d="M 0 0 C 15 -15 35 0 25 25 C 15 45 -15 45 -25 25 C -35 0 -15 -15 0 0 Z" fill="#FF8A80" opacity="0.8"/>
+    <path d="M 0 -2 Q 8 -12 0 -20" stroke="#347B43" stroke-width="3" fill="none"/>
+    <ellipse cx="6" cy="-14" rx="8" ry="4" fill="#347B43" transform="rotate(-30 6 -14)"/>
+  </g>
+
+  <!-- Blue accent straw (User visual design system: Blue #3265AE small accents only) -->
+  <path d="M 230 25 L 210 145" stroke="#3265AE" stroke-width="12" stroke-linecap="round"/>
+  <line x1="228" y1="40" x2="221" y2="44" stroke="#FFF" stroke-width="3.5" stroke-linecap="round"/>
+  <line x1="222" y1="65" x2="215" y2="69" stroke="#FFF" stroke-width="3.5" stroke-linecap="round"/>
+
+  <!-- Takeaway Cup -->
+  <path d="M 160 100 L 240 100 L 228 245 C 227 254 220 260 210 260 L 190 260 C 180 260 173 254 172 245 Z" fill="url(#tea-liq)"/>
+  <path d="M 155 95 L 245 95 L 231 250 C 230 260 221 268 210 268 L 190 268 C 179 268 170 260 169 250 Z" 
+        fill="none" stroke="#FFFFFF" stroke-width="5" opacity="0.85"/>
+  <ellipse cx="200" cy="95" rx="46" ry="10" fill="#FFFFFF" opacity="0.4"/>
+
+  <!-- Peach slices & Tea leaves in cup -->
+  <path d="M 180 140 C 190 130 210 145 200 160 C 190 170 175 155 180 140 Z" fill="#FFA726" opacity="0.9"/>
+  <!-- Tea leaf -->
+  <path d="M 215 180 C 225 170 220 195 210 195 Z" fill="#347B43" opacity="0.9"/>
+
+  <!-- Ice cubes -->
+  <rect x="180" y="180" width="22" height="22" rx="5" fill="#FFF" opacity="0.5" transform="rotate(18 180 180)"/>
+  <rect x="205" y="210" width="18" height="18" rx="5" fill="#FFF" opacity="0.5" transform="rotate(-15 205 210)"/>
+
+  <!-- Brand Smile on cup -->
+  <circle cx="200" cy="180" r="16" fill="#FFF4DF"/>
+  <circle cx="195" cy="177" r="1.5" fill="#13301B"/>
+  <circle cx="205" cy="177" r="1.5" fill="#13301B"/>
+  <path d="M 195 182 Q 200 187 205 182" stroke="#FF7770" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+
+  <!-- Floating tea leaves -->
+  <g transform="translate(300, 150) rotate(35)">
+    <ellipse cx="0" cy="0" rx="16" ry="7" fill="#347B43"/>
+    <path d="M -16 0 L 16 0" stroke="#FFF4DF" stroke-width="1.2"/>
+  </g>
+  <g transform="translate(320, 190) rotate(-20)">
+    <ellipse cx="0" cy="0" rx="14" ry="6" fill="#4CAF50"/>
+    <path d="M -14 0 L 14 0" stroke="#FFF4DF" stroke-width="1"/>
+  </g>
+
+  <!-- Category Pill Badge -->
+  <g transform="translate(200, 280)">
+    <rect x="-80" y="-14" width="160" height="28" rx="14" fill="#13301B"/>
+    <text x="0" y="5" font-family="'Fredoka', sans-serif" font-weight="600" font-size="12" fill="#FFC629" text-anchor="middle">
+      TEA TIME (ICED TEAS)
+    </text>
+  </g>
+</svg>

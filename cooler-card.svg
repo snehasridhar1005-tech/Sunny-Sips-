@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <linearGradient id="cool-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE0B2"/>
+      <stop offset="100%" stop-color="#FF941F"/>
+    </linearGradient>
+    <linearGradient id="cool-liq" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFA726"/>
+      <stop offset="60%" stop-color="#FF7043"/>
+      <stop offset="100%" stop-color="#FFB300"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" rx="24" fill="url(#cool-bg)"/>
+  
+  <!-- Bubble rings -->
+  <circle cx="80" cy="70" r="16" fill="#FFF" opacity="0.3"/>
+  <circle cx="340" cy="80" r="22" fill="#FFF" opacity="0.25"/>
+  <circle cx="320" cy="230" r="14" fill="#FFF" opacity="0.25"/>
+
+  <!-- Orange slice in background -->
+  <g transform="translate(130, 90) rotate(15)">
+    <circle cx="0" cy="0" r="38" fill="#FFB74D" stroke="#FFF" stroke-width="4"/>
+    <circle cx="0" cy="0" r="30" fill="#FF941F"/>
+    <path d="M 0 0 L 0 -26 M 0 0 L 22 -13 M 0 0 L 22 13 M 0 0 L 0 26 M 0 0 L -22 13 M 0 0 L -22 -13" stroke="#FFF" stroke-width="3"/>
+  </g>
+
+  <!-- Green Straw -->
+  <path d="M 215 30 L 235 150" stroke="#347B43" stroke-width="12" stroke-linecap="round"/>
+
+  <!-- Takeaway Cup -->
+  <path d="M 160 100 L 240 100 L 228 245 C 227 254 220 260 210 260 L 190 260 C 180 260 173 254 172 245 Z" fill="url(#cool-liq)"/>
+  <path d="M 155 95 L 245 95 L 231 250 C 230 260 221 268 210 268 L 190 268 C 179 268 170 260 169 250 Z" 
+        fill="none" stroke="#FFFFFF" stroke-width="5" opacity="0.85"/>
+  <ellipse cx="200" cy="95" rx="46" ry="10" fill="#FFFFFF" opacity="0.4"/>
+
+  <!-- Ice & Mint -->
+  <rect x="180" y="130" width="22" height="22" rx="5" fill="#FFF" opacity="0.5" transform="rotate(20 180 130)"/>
+  <rect x="195" y="175" width="20" height="20" rx="5" fill="#FFF" opacity="0.5" transform="rotate(-15 195 175)"/>
+  
+  <!-- Mint leaf on cup rim -->
+  <path d="M 165 85 C 160 70 180 75 180 82 C 180 90 170 92 165 85 Z" fill="#347B43"/>
+  <path d="M 172 80 C 185 70 195 80 188 88 Z" fill="#55A866"/>
+
+  <!-- Smiley face badge on cup -->
+  <circle cx="200" cy="205" r="16" fill="#FFF4DF"/>
+  <circle cx="195" cy="202" r="1.5" fill="#13301B"/>
+  <circle cx="205" cy="202" r="1.5" fill="#13301B"/>
+  <path d="M 195 207 Q 200 212 205 207" stroke="#FF941F" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+
+  <!-- Floating berries -->
+  <circle cx="270" cy="210" r="12" fill="#C2185B"/>
+  <circle cx="290" cy="225" r="9" fill="#7B1FA2"/>
+  <circle cx="265" cy="235" r="8" fill="#AD1457"/>
+  <!-- Leaf on berry -->
+  <path d="M 270 198 Q 275 194 280 198 Q 275 202 270 198" fill="#347B43"/>
+
+  <!-- Category Pill Badge -->
+  <g transform="translate(200, 280)">
+    <rect x="-70" y="-14" width="140" height="28" rx="14" fill="#13301B"/>
+    <text x="0" y="5" font-family="'Fredoka', sans-serif" font-weight="600" font-size="12" fill="#FFC629" text-anchor="middle">
+      FRUIT COOLERS
+    </text>
+  </g>
+</svg>
